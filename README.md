@@ -77,24 +77,24 @@ rules:
 
 |Service    |Rule File                                     |Domains|Description                       |
 |-----------|----------------------------------------------|-------|----------------------------------|
-|**YouTube**|[`youtube.list`](rules/streaming/youtube.list)|15+    |YouTube, YouTube Music, YouTube TV|
+|**YouTube**|[`youtube.list`](rules/streaming/youtube.list)|12+    |YouTube, YouTube Music, YouTube TV|
 |**Netflix**|[`netflix.list`](rules/streaming/netflix.list)|20+    |Netflix global streaming          |
 
 ### 💬 Social Media & Communication
 
 |Service      |Rule File                                    |Domains|Description                   |
 |-------------|---------------------------------------------|-------|------------------------------|
-|**Telegram** |[`telegram.list`](rules/social/telegram.list)|25+    |Telegram messaging + IP ranges|
-|**Discord**  |[`discord.list`](rules/social/discord.list)  |15+    |Discord voice/text chat       |
-|**Twitter/X**|[`twitter.list`](rules/social/twitter.list)  |12+    |Twitter/X social platform     |
+|**Telegram** |[`telegram.list`](rules/social/telegram.list)|29+    |Telegram messaging + IP ranges|
+|**Discord**  |[`discord.list`](rules/social/discord.list)  |14+    |Discord voice/text chat       |
+|**Twitter/X**|[`twitter.list`](rules/social/twitter.list)  |16+    |Twitter/X social platform     |
 
 ### 🌐 Global Tech Services
 
 |Service      |Rule File                                      |Domains|Description                         |
 |-------------|-----------------------------------------------|-------|------------------------------------|
-|**Google**   |[`google.list`](rules/global/google.list)      |200+   |Google Search, Gmail, Drive, Android|
+|**Google**   |[`google.list`](rules/global/google.list)      |219+   |Google Search, Gmail, Drive, Android|
 |**Apple**    |[`apple.list`](rules/global/apple.list)        |30+    |iCloud, App Store, Apple Music      |
-|**Microsoft**|[`microsoft.list`](rules/global/microsoft.list)|35+    |Office 365, Azure, Teams, Xbox      |
+|**Microsoft**|[`microsoft.list`](rules/global/microsoft.list)|32+    |Office 365, Azure, Teams, Xbox      |
 
 ## 🔗 Direct URLs
 
@@ -132,13 +132,18 @@ A complete, production-ready configuration for Loon is available here:
 
 ### Shadowrocket Optimized Configuration
 
-A complete, optimized configuration for Shadowrocket is available here:
-[`shadowrocket/complete.conf`](configs/shadowrocket/complete.conf)
+Multiple configurations for Shadowrocket are available:
+
+- [`shadowrocket/complete.conf`](configs/shadowrocket/complete.conf) — Full configuration with all rule sets
+- [`shadowrocket/inline.conf`](configs/shadowrocket/inline.conf) — Inline rules (no external URL fetching)
+- [`shadowrocket/minimal.conf`](configs/shadowrocket/minimal.conf) — Lightweight configuration for basic use
 
 ### Stash Advanced Configuration
 
 An advanced, feature-rich configuration for Stash is available here:
 [`stash/complete.yaml`](configs/stash/complete.yaml)
+
+> 💡 **Subscription URL?** Read the [`stash/SUBSCRIPTION-GUIDE.md`](configs/stash/SUBSCRIPTION-GUIDE.md) for a complete guide on adding your proxy provider URL.
 
 ## 🛠️ Rule Format Standards
 
@@ -157,10 +162,10 @@ USER-AGENT,*App*                   # User agent pattern matching
 
 |Category     |Files|Total Domains|Coverage                    |
 |-------------|-----|-------------|----------------------------|
-|**Streaming**|2    |35+          |YouTube, Netflix            |
-|**Social**   |3    |52+          |Telegram, Discord, Twitter/X|
-|**Global**   |3    |265+         |Google, Apple, Microsoft    |
-|**Total**    |**8**|**352+**     |**Comprehensive**           |
+|**Streaming**|2    |32+          |YouTube, Netflix            |
+|**Social**   |3    |59+          |Telegram, Discord, Twitter/X|
+|**Global**   |3    |281+         |Google, Apple, Microsoft    |
+|**Total**    |**8**|**372+**     |**Comprehensive**           |
 
 ## 🔄 Update Policy
 
@@ -198,22 +203,29 @@ RULE-SET,https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rule
 ```
 proxy-rules/
 ├── README.md                    # This documentation
+├── base-config.conf             # Base configuration template
 ├── rules/
 │   ├── streaming/              # Video/audio streaming services
-│   │   ├── youtube.list        # YouTube ecosystem (15+ domains)
+│   │   ├── youtube.list        # YouTube ecosystem (12+ domains)
 │   │   └── netflix.list        # Netflix global (20+ domains)
 │   ├── social/                 # Social media & communication
-│   │   ├── telegram.list       # Telegram + IP ranges (25+ rules)
-│   │   ├── discord.list        # Discord platform (15+ domains)
-│   │   └── twitter.list        # Twitter/X platform (12+ domains)
+│   │   ├── telegram.list       # Telegram + IP ranges (29+ rules)
+│   │   ├── discord.list        # Discord platform (14+ domains)
+│   │   └── twitter.list        # Twitter/X platform (16+ domains)
 │   └── global/                 # International tech services
-│       ├── google.list         # Google ecosystem (200+ domains)
+│       ├── google.list         # Google ecosystem (219+ domains)
 │       ├── apple.list          # Apple services (30+ domains)
-│       └── microsoft.list      # Microsoft suite (35+ domains)
+│       └── microsoft.list      # Microsoft suite (32+ domains)
 └── configs/                    # Complete configurations
     ├── loon/
+    │   └── complete.conf       # Production-ready Loon config
     ├── shadowrocket/
+    │   ├── complete.conf       # Full Shadowrocket config
+    │   ├── inline.conf         # Inline rules (no external URLs)
+    │   └── minimal.conf        # Lightweight config
     └── stash/
+        ├── complete.yaml       # Advanced Stash config
+        └── SUBSCRIPTION-GUIDE.md  # Guide for proxy subscription URLs
 ```
 
 ## 🤝 Contributing
@@ -271,7 +283,7 @@ proxy-rules/
 
 **Repository**: https://github.com/lwmmedia/Proxy-rules-public  
 **Maintainer**: lwmmedia  
-**Last Updated**: January 2025  
-**Version**: 1.0.0
+**Last Updated**: June 2026  
+**Version**: 1.1.0
 
 ⭐ **Star this repo** if you find it useful!
