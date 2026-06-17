@@ -1,7 +1,7 @@
 # Stash Complete Configuration
 # Proxy Rules Collection by lwmmedia
 # Last Updated: November 10, 2025
-# Repository: https://github.com/lwmmedia/proxy-rules
+# Repository: https://github.com/lwmmedia/Proxy-rules-public
 
 # Subscription Configuration
 # Uncomment and fill in your proxy provider's subscription URL
@@ -223,14 +223,14 @@ rule-providers:
   youtube:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/streaming/youtube.list
+    url: https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/streaming/youtube.list
     path: ./ruleset/youtube.yaml
     interval: 86400
 
   netflix:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/streaming/netflix.list
+    url: https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/streaming/netflix.list
     path: ./ruleset/netflix.yaml
     interval: 86400
 
@@ -238,21 +238,21 @@ rule-providers:
   telegram:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/social/telegram.list
+    url: https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/social/telegram.list
     path: ./ruleset/telegram.yaml
     interval: 86400
 
   discord:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/social/discord.list
+    url: https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/social/discord.list
     path: ./ruleset/discord.yaml
     interval: 86400
 
   twitter:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/social/twitter.list
+    url: https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/social/twitter.list
     path: ./ruleset/twitter.yaml
     interval: 86400
 
@@ -260,21 +260,21 @@ rule-providers:
   google:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/global/google.list
+    url: https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/global/google.list
     path: ./ruleset/google.yaml
     interval: 86400
 
   microsoft:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/global/microsoft.list
+    url: https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/global/microsoft.list
     path: ./ruleset/microsoft.yaml
     interval: 86400
 
   apple:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/global/apple.list
+    url: https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/global/apple.list
     path: ./ruleset/apple.yaml
     interval: 86400
 
