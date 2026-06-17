@@ -27,7 +27,7 @@ Professional rule sets for iOS proxy applications: **Loon**, **Shadowrocket**, a
 
 *Guide interactif avec installation pas à pas, explications détaillées et liens de téléchargement pour toutes les configurations.*
 
-> **Note:** Si le lien GitHub Pages ne fonctionne pas encore, utilisez ce [lien de prévisualisation](https://htmlpreview.github.io/?https://github.com/lwmmedia/proxy-rules/blob/main/index.html).
+> **Note:** Si le lien GitHub Pages ne fonctionne pas encore, utilisez ce [lien de prévisualisation](https://htmlpreview.github.io/?https://github.com/lwmmedia/Proxy-rules-public/blob/main/index.html).
 
 ---
 
@@ -37,18 +37,18 @@ Professional rule sets for iOS proxy applications: **Loon**, **Shadowrocket**, a
 
 ```ini
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/streaming/youtube.list,YouTube,tag=YouTube,enabled=true
-RULE-SET,https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/streaming/netflix.list,Netflix,tag=Netflix,enabled=true
-RULE-SET,https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/social/telegram.list,Telegram,tag=Telegram,enabled=true
+RULE-SET,https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/streaming/youtube.list,YouTube,tag=YouTube,enabled=true
+RULE-SET,https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/streaming/netflix.list,Netflix,tag=Netflix,enabled=true
+RULE-SET,https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/social/telegram.list,Telegram,tag=Telegram,enabled=true
 ```
 
 ### Shadowrocket
 
 ```ini
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/streaming/youtube.list,YouTube
-RULE-SET,https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/streaming/netflix.list,Netflix
-RULE-SET,https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/social/telegram.list,Telegram
+RULE-SET,https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/streaming/youtube.list,YouTube
+RULE-SET,https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/streaming/netflix.list,Netflix
+RULE-SET,https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/social/telegram.list,Telegram
 ```
 
 ### Stash
@@ -58,12 +58,12 @@ rule-providers:
   YouTube:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/streaming/youtube.list
+    url: https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/streaming/youtube.list
     interval: 86400
   Netflix:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/streaming/netflix.list
+    url: https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/streaming/netflix.list
     interval: 86400
 
 rules:
@@ -103,24 +103,24 @@ Copy-paste ready URLs for immediate use:
 ### Streaming
 
 ```
-https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/streaming/youtube.list
-https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/streaming/netflix.list
+https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/streaming/youtube.list
+https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/streaming/netflix.list
 ```
 
 ### Social
 
 ```
-https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/social/telegram.list
-https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/social/discord.list
-https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/social/twitter.list
+https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/social/telegram.list
+https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/social/discord.list
+https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/social/twitter.list
 ```
 
 ### Global Services
 
 ```
-https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/global/google.list
-https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/global/apple.list
-https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/global/microsoft.list
+https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/global/google.list
+https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/global/apple.list
+https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/global/microsoft.list
 ```
 
 ## 📋 Complete Configurations
@@ -182,7 +182,7 @@ USER-AGENT,*App*                   # User agent pattern matching
 
 ```ini
 # Debug connectivity issues
-RULE-SET,https://raw.githubusercontent.com/lwmmedia/proxy-rules/main/rules/streaming/youtube.list,DIRECT,tag=YouTube-Debug
+RULE-SET,https://raw.githubusercontent.com/lwmmedia/Proxy-rules-public/main/rules/streaming/youtube.list,DIRECT,tag=YouTube-Debug
 # Test if rules work by temporarily routing to DIRECT
 ```
 
@@ -243,7 +243,7 @@ proxy-rules/
 
 ## 📞 Support & Resources
 
-- **Issues**: [GitHub Issues](https://github.com/lwmmedia/proxy-rules/issues)
+- **Issues**: [GitHub Issues](https://github.com/lwmmedia/Proxy-rules-public/issues)
 - **Feature Requests**: Use GitHub Issues with `enhancement` label
 - **Documentation**: Check README.md for latest information
 - **Community**: Star the repo and share with other users
@@ -269,7 +269,7 @@ proxy-rules/
 
 -----
 
-**Repository**: https://github.com/lwmmedia/proxy-rules  
+**Repository**: https://github.com/lwmmedia/Proxy-rules-public  
 **Maintainer**: lwmmedia  
 **Last Updated**: January 2025  
 **Version**: 1.0.0
